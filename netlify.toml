@@ -1,5 +1,5 @@
 [build]
-  command = "apt-get update && apt-get install -y coreutils && bash install_emsdk.sh && npm install && npm run build"
+  ccommand = "apt-get update && apt-get install -y coreutils python3 && bash install_emsdk.sh && npm install && npm run build"
   publish = ".next"  # This is NOT needed for Next.js, but won't break anything
 
 [build.environment]
