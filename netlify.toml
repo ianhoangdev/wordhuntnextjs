@@ -1,0 +1,8 @@
+[build]
+  command = "bash install_emsdk.sh && npm run build"
+  publish = ".next"  # This is NOT needed for Next.js, but won't break anything
+
+[build.environment]
+  NODE_VERSION = "18"  # Ensure compatibility with Next.js
+  EMSDK = "/opt/buildhome/.emsdk"
+  PATH = "/opt/buildhome/.emsdk:/opt/buildhome/.emsdk/upstream/emscripten:$PATH"
