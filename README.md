@@ -3,6 +3,7 @@
 ## Overview
 
 Wordhunt Solver is a high-performance web application designed to efficiently find words in a Word Hunt-style game. It leverages C++, WebAssembly, and TensorFlow for speed and accuracy, while Next.js, TypeScript, TailwindCSS, and Redux provide a seamless user experience.
+[![Watch this video](https://img.youtube.com/vi/J2-TIB7u0yI/0.jpg)](https://www.youtube.com/watch?v=J2-TIB7u0yI)
 
 ## Features
 
