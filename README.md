@@ -6,21 +6,21 @@ Wordhunt Solver is a high-performance web application designed to efficiently fi
 
 ## Features
 
-**Optimized Algorithm Efficiency:** Utilizes a trie data structure and backtracking to achieve a 99% accuracy rate.
+- **Optimized Algorithm Efficiency:** Utilizes a trie data structure and backtracking to achieve a 99% accuracy rate.
 
-**WebAssembly Integration:** Enhances the performance of C++ code within a Next.js web application, improving word search speed by 50%.
+- **WebAssembly Integration:** Enhances the performance of C++ code within a Next.js web application, improving word search speed by 50%.
 
-**State Management Improvements:** Implements Redux optimizations, reducing memory usage by 30%.
+- **State Management Improvements:** Implements Redux optimizations, reducing memory usage by 30%.
 
-**Ongoing AI Development:** A TensorFlow machine learning model is being developed for advanced pattern recognition and improved word detection.
+- **Ongoing AI Development:** A TensorFlow machine learning model is being developed for advanced pattern recognition and improved word detection.
 
 ## Tech Stack
 
-Frontend: Next.js, TypeScript, TailwindCSS, Redux
+- **Frontend:** Next.js, TypeScript, TailwindCSS, Redux
 
-Backend: C++ (compiled to WebAssembly), TensorFlow (for ML model)
+- **Backend:** C++ (compiled to WebAssembly), TensorFlow (for ML model)
 
-Performance Enhancements: WebAssembly for efficient computation, optimized state management with Redux
+- **Performance Enhancements:** WebAssembly for efficient computation, optimized state management with Redux
 
 ## Installation
 
@@ -28,47 +28,47 @@ To run the Wordhunt Solver locally:
 
 **Prerequisites**
 
-Node.js (latest LTS version recommended)
+- Node.js (latest LTS version recommended)
 
-Emscripten (for WebAssembly compilation)
+- Emscripten (for WebAssembly compilation)
 
-Python & TensorFlow (if working on the ML model)
+- Python & TensorFlow (if working on the ML model)
 
 **Steps**
 
-Clone the repository:
+1. Clone the repository:
 
 `git clone git@github.com:ianhoangdev/wordhuntsolver.git`
 
-Install dependencies:
+2. Install dependencies:
 
 `npm install`
 
-Compile the C++ code to WebAssembly:
+3. Compile the C++ code to WebAssembly:
 
 `emcc ./src/app/solve.cpp -o ./public/solve_wasm.js -s EXPORT_ES6=1 -s EXPORT_NAME="solve" -s EXPORTED_FUNCTIONS="['_solve', '_malloc', '_free']" -s ENVIRONMENT="web" -s EXPORTED_RUNTIME_METHODS='["UTF8ToString", "stringToUTF8"]' -s ALLOW_MEMORY_GROWTH=1`
 
-Start the development server:
+4. Start the development server:
 
 `npm run dev`
 
-Open the app in your browser at http://localhost:3000
+5. Open the app in your browser at `http://localhost:3000`
 
 ## Usage
 
-Input the board letters and start the solver to get possible words.
+- Input the board letters and start the solver to get possible words.
 
-The algorithm runs efficiently in the browser using WebAssembly.
+- The algorithm runs efficiently in the browser using WebAssembly.
 
-Future updates will include an AI-powered word prediction feature.
+- Future updates will include an AI-powered word prediction feature.
 
 ## Future Improvements
 
-Enhanced AI Capabilities: Improve TensorFlow model accuracy for better word predictions.
+- Enhanced AI Capabilities: Improve TensorFlow model accuracy for better word predictions.
 
-UI/UX Enhancements: More interactive and visually appealing design.
+- UI/UX Enhancements: More interactive and visually appealing design.
 
-Leaderboard & Challenges: Compete with others in solving word puzzles.
+- Leaderboard & Challenges: Compete with others in solving word puzzles.
 
 ## Contributing
 
