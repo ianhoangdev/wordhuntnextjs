@@ -356,12 +356,12 @@ export default function Home() {
       <footer className="w-full bg-[#2b3a22] text-white text-center p-4 mt-8">
         <p className="text-sm">© 2025 Word Hunt Solver. Developed by {" "}
           <a 
-            href="https://github.com/hqdatt" 
+            href="https://github.com/ianhoangdev" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-600"
           >
-            Quang Dat Hoang
+            Ian Hoang
           </a>. All rights reserved.</p>
         <p className="text-xs mt-2">
           This app is a personal project for educational purposes. The content and the data provided are 
